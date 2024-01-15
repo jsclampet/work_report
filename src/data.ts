@@ -1,4 +1,4 @@
-export const data = [
+export const JSON = [
   {
     global_updated_at: "2024-01-14T19:01:00-06:00",
     subject: "Can't use app - router already on other acct",
