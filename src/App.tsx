@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   LineChart,
   Line,
@@ -11,7 +12,7 @@ import {
 } from "recharts";
 
 const App = () => {
-  const data = [
+  const [data, setData] = useState([
     { name: "Page A", uv: 400, pv: 2400, amt: 2400 },
     { name: "Page B", uv: 200, pv: 2400, amt: 2400 },
     { name: "Page C", uv: 400, pv: 2400, amt: 2400 },
@@ -23,7 +24,7 @@ const App = () => {
     { name: "Page I", uv: 500, pv: 2400, amt: 2400 },
     { name: "Page J", uv: 250, pv: 2400, amt: 2400 },
     { name: "Page K", uv: 450, pv: 2400, amt: 2400 },
-  ];
+  ]);
 
   return (
     <div>
@@ -79,15 +80,15 @@ const App = () => {
       <br />
       <br />
       <br />
-      <BarChart width={600} height={300} data={data}>
+      <BarChart width={900} height={300} data={data}>
         <XAxis dataKey="name" stroke="#8884d8" />
         <YAxis />
         <Tooltip wrapperStyle={{ width: 100, backgroundColor: "#ccc" }} />
         <Legend
           width={100}
           wrapperStyle={{
-            top: 40,
-            right: 20,
+            top: 5,
+            right: 5,
             backgroundColor: "#f5f5f5",
             border: "1px solid #d5d5d5",
             borderRadius: 3,
