@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { JSON } from "./data";
 import { CartesianGrid, XAxis, YAxis, Tooltip, BarChart, Bar } from "recharts";
 import All_Chart from "./components/All_Chart/All_Chart";
+import TSR_CSR_weekly from "./components/TSR_CSR_weekly/TSR_CSR_weekly";
 
 interface TicketDataType {
   name: string;
@@ -69,6 +70,7 @@ const App = () => {
       <hr />
       <hr />
       <br />
+      <TSR_CSR_weekly />
     </div>
   );
 };

@@ -21,6 +21,10 @@
     - 18
       - CUSTOMER SUPPORT TIER 2
 
+## Figure out next
+- get week-to-week with BOTH TSR and CSR
+- get month-to-month with BOTH TSR and CSR
+
 ## STRUCTURE
 - Data documents store the data for each chart, could be thought of as "API data" that's imported in
 - 'examples.tsx' is where all the tested and working charts are ... copy/paste from there, or visit the library website
