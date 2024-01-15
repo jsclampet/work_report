@@ -3,39 +3,27 @@ import "./All_Chart.css";
 import { data } from "./All_Chart.data";
 
 function All_Chart() {
-  let openCount: number = 0;
-  let closedCount: number = 0;
-  let pendingExternalCount: number = 0;
-  let pendingInternalCount: number = 0;
+  let techSupportCount: number = 0;
+  let customerServiceCount: number = 0;
   const closedTickets = data.filter((ticket) => (ticket.status = "CLOSED"));
   closedTickets.forEach((ticket) => {
     switch (ticket.status) {
       case "OPEN":
-        openCount++;
+        techSupportCount++;
         break;
       case "CLOSED":
-        closedCount++;
+        customerServiceCount++;
         break;
-      case "PENDING_EXTERNAL":
-        pendingExternalCount++;
-        break;
-      case "PENDING_INTERNAL":
-        pendingInternalCount++;
         break;
       default:
         break;
     }
   });
   const allTicketData = [
-    { name: "Closed", count: closedCount },
-    { name: "Open", count: openCount },
+    { name: "Tech Support", count: techSupportCount },
     {
-      name: "Pending Ext",
-      count: pendingExternalCount,
-    },
-    {
-      name: "Pending Int",
-      count: pendingInternalCount,
+      name: "Customer Support",
+      count: customerServiceCount,
     },
   ];
 

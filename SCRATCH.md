@@ -7,7 +7,7 @@
   - Categories
 
 ## KEEP IN MIND
-- Ticket group ID
+- ticket_group_id
 - BOTH ARE STRINGS, <NOT> NUMBERS
   - TECH SUPPORT
     - 17
@@ -32,7 +32,7 @@
   - This is since (and if) JSON file from Sonar always contains the same shape/format
 - Components will only have charts and props
   - Props will allow for data to be manipulated
-    - For simplicity, we can 'MAP' the data by 'TICKET GROUP' to trim data for accuracy and to make it more lightweight to work with
+    - For simplicity, we can 'FILTER' the data by 'TICKET GROUP' to trim data for accuracy and to make it more lightweight to work with
     - The main ticket properties we care about (so far):
       - 'status' - will help us categorize and keep count
       - 'sonar_unique_id' - for keys in TSX maps
