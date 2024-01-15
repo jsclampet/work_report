@@ -52,16 +52,6 @@ const App = () => {
 
   return (
     <div>
-      {ticketDataArray &&
-        ticketDataArray.map((ticket) => {
-          return (
-            <div key={crypto.randomUUID()}>
-              <h3>{ticket.name}</h3>
-              <h4>{ticket.count}</h4>
-            </div>
-          );
-        })}
-
       <BarChart width={500} height={300} data={ticketDataArray}>
         <XAxis dataKey="name" stroke="#8884d8" />
         <YAxis />
@@ -72,9 +62,13 @@ const App = () => {
       <br />
       <hr />
       <hr />
-      <br />
 
+      <h2>CLOSED TICKETS || JAN 1 - JAN 14 </h2>
       <All_Chart />
+      <br />
+      <hr />
+      <hr />
+      <br />
     </div>
   );
 };

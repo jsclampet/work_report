@@ -7,13 +7,12 @@ function All_Chart() {
   let customerServiceCount: number = 0;
   const closedTickets = data.filter((ticket) => (ticket.status = "CLOSED"));
   closedTickets.forEach((ticket) => {
-    switch (ticket.status) {
-      case "OPEN":
+    switch (ticket.ticket_group_id) {
+      case "3" || "17":
         techSupportCount++;
         break;
-      case "CLOSED":
+      case "19" || "18":
         customerServiceCount++;
-        break;
         break;
       default:
         break;
