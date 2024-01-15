@@ -1,25 +1,5 @@
 export const data = [
   {
-    "global_updated_at": "2024-01-15T00:10:38-06:00",
-    "subject": "Lawton Self / Port Forwarding / 476988664226   / GA",
-    "description": "<p>Tech's Name: Elizabeth Kelly</p><p>Contact ID: 476988664226</p><p>Account Name: Lawton Self</p><p>Account Phone Number: 9122701417</p><p>Caller Name: Lawton Self</p><p>Callback Number: 9122701417</p><p>Service Address: 732 Pine Haven Cir Brunswick GA </p><p>Reason for call: POrt forwarding</p><p>Call Notes: Port Forwarding</p><p>LiveOak does not support setting up port forwarding for their customers.</p><p>closing</p>",
-    "status": "CLOSED",
-    "priority": "LOW",
-    "closed_at": "2024-01-15T00:10:37-06:00",
-    "due_date": null,
-    "ticketable_type": "Account",
-    "ticketable_id": "26057",
-    "parent_ticket_id": null,
-    "ticket_group_id": "3",
-    "user_id": null,
-    "inbound_mailbox_id": null,
-    "spam_score": null,
-    "id": "3027",
-    "sonar_unique_id": "VGlja2V0XzMwMjc=",
-    "created_at": "2024-01-15T00:10:37-06:00",
-    "updated_at": "2024-01-15T00:10:37-06:00"
-  },
-  {
     "global_updated_at": "2024-01-14T22:12:28-06:00",
     "subject": "Marcelin De Jesus / 9143141894 / ACESS point / 476988659094",
     "description": "<p>Tech's Name: Anthony Staley</p><p>Contact ID: 476988659094</p><p>Account Name: </p><p>Account Phone Number: </p><p>Caller Name: Marcelino De Jesus</p><p>Callback Number: 9143141894</p><p>Service Address: 1011 Palmetto Ave, Brunswick, Georgia 31520</p><p>Reason for call: Access point is to far</p><p>Call Notes: Issue\t\tSource\tSeverity\t</p><p>Client efficiency below threshold detected.</p><p>warning6c:56:97:42:48:1e\t</p><p>Issue</p><p>Client efficiency below threshold detected.</p><p>warningApple iPhone 14 Pro Max\t</p><p>Issue</p><p>Client efficiency below threshold detected.</p><p>warningSONY Smart TV\t</p><p>Issue</p><p>Client efficiency below threshold detected.</p><p>warningApple iPhone 11\t</p><p>Issue</p><p>Go To Client Detail</p><p>Client efficiency below threshold detected.</p><p>warningRoom TV\t</p><p>Issue</p><p>Client efficiency below threshold detected.</p><p>warningMaria's Phone\t</p><p>Issue</p><p>Client efficiency below threshold detected.</p><p>warningsony tv famliy room\t</p><p>Issue</p><p>Access Point placement is too far from the router.</p><p>warningCXNK012AF461\t</p><p>Issue</p><p>2.4 GHz Wi-Fi channel interference is above recommended thresholds.</p>",

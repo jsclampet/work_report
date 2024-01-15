@@ -53,6 +53,7 @@ const App = () => {
 
   return (
     <div>
+      <h2>Tickets by Status || any date range ???? </h2>
       <BarChart width={500} height={300} data={ticketDataArray}>
         <XAxis dataKey="name" stroke="#8884d8" />
         <YAxis />
@@ -62,13 +63,15 @@ const App = () => {
       </BarChart>
       <br />
       <hr />
-      <hr />
 
-      <h2>CLOSED TICKETS || JAN 1 - JAN 14 </h2>
+      <h2>Tickets by Department</h2>
+      <h3>JAN 1 - JAN 14</h3>
+      <br />
       <All_Chart />
       <br />
       <hr />
-      <hr />
+
+      <h2>Tickets by Week | January</h2>
       <br />
       <TSR_CSR_weekly />
     </div>

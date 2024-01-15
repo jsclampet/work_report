@@ -2,24 +2,23 @@ import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
 import { data } from "./TSR_CSR_weekly.data";
 
 const TSR_CSR_weekly = () => {
-  let closedTicketCount: number = 0;
-  let dataArrayLength = data.length;
-  const closedTickets = data.filter((ticket) => ticket.status === "CLOSED");
-  let weeksArray = closedTickets.map((ticket) => {
-    if (weeksArray) {
-      console;
+  let week1Count: number = 0;
+  let week2Count: number = 0;
+  const ticketCreatedDay = (day: string) => {
+    return parseInt(day.split("T")[0].split("-")[2]);
+  };
+  data.forEach((ticket) => {
+    if (ticketCreatedDay(ticket.created_at) <= 7) {
+      week1Count++;
+    } else if (ticketCreatedDay(ticket.created_at) < 15) {
+      week2Count++;
     }
   });
-  closedTickets.forEach((ticket) => {
-    switch (ticket.ticket_group_id) {
-      case "":
-        closedTicketCount++;
-        break;
-      default:
-        break;
-    }
-  });
-  const allTicketData = [{ week: "January", count: closedTicketCount }];
+
+  const allTicketData = [
+    { week: "1/1/23 - 1/7/23", count: week1Count },
+    { week: "1/8/23 - 1/14/23", count: week2Count },
+  ];
 
   return (
     <div>
