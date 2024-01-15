@@ -8,6 +8,7 @@
 
 ## KEEP IN MIND
 - Ticket group ID
+- BOTH ARE STRINGS, <NOT> NUMBERS
   - TECH SUPPORT
     - 17
       - Tech Support Tier 2 = 
