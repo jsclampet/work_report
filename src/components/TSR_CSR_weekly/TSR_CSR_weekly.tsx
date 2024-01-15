@@ -4,13 +4,12 @@ import { data } from "./TSR_CSR_weekly.data";
 const TSR_CSR_weekly = () => {
   let closedTicketCount: number = 0;
   let dataArrayLength = data.length;
-  let weeksArray = data.map((ticket) => {
-    while (dataArrayLength > 0) {
-      console.log(ticket);
-      dataArrayLength--;
+  const closedTickets = data.filter((ticket) => ticket.status === "CLOSED");
+  let weeksArray = closedTickets.map((ticket) => {
+    if (weeksArray) {
+      console;
     }
   });
-  const closedTickets = data.filter((ticket) => (ticket.status = "CLOSED"));
   closedTickets.forEach((ticket) => {
     switch (ticket.ticket_group_id) {
       case "":
