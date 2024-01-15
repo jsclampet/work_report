@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { JSON } from "./data";
 import { CartesianGrid, XAxis, YAxis, Tooltip, BarChart, Bar } from "recharts";
+import All_Chart from "./components/All_Chart/All_Chart";
 
 interface TicketDataType {
   name: string;
@@ -68,6 +69,12 @@ const App = () => {
         <CartesianGrid stroke="#ccc" strokeDasharray="8 5" />
         <Bar dataKey="count" fill="#8884d8" barSize={30} />
       </BarChart>
+      <br />
+      <hr />
+      <hr />
+      <br />
+
+      <All_Chart />
     </div>
   );
 };

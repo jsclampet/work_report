@@ -5,7 +5,20 @@
   - individual
   - TSR / CSR
   - Categories
-  
+
+## KEEP IN MIND
+- Ticket group ID
+  - TECH SUPPORT
+    - 17
+      - Tech Support Tier 2 = 
+    - 3
+      - NRTC Tech Support
+    - 
+  - CUSTOMER SUPPORT
+    - 19
+      - NRTC Customer Support
+    - 18
+      - CUSTOMER SUPPORT TIER 2
 
 ## STRUCTURE
 - Data documents store the data for each chart, could be thought of as "API data" that's imported in
@@ -21,3 +34,13 @@
     - For simplicity, we can 'MAP' the data by 'TICKET GROUP' to trim data for accuracy and to make it more lightweight to work with
     - The main ticket properties we care about (so far):
       - 'status' - will help us categorize and keep count
+      - 'sonar_unique_id' - for keys in TSX maps
+      - "created_at": "2024-01-09T07:57:41-06:00",
+        - TO KEEP TRACK OF MONTHS and DAYS
+          - const dateTrimmed = data.created_at.split('T')[0]
+          - const month = date.split('-')[1]
+          - const day = date.split('-')[2]
+        - TO KEEP TRACK OF TIME (it is stored as military)
+          - const timeTrimmed = data.created_at.split('T')[1].split('-')[0]
+          - const convertMilitaryToStandard = (t) => t + (t > 12 ? t - 12 + 'pm' : t + 'am')
+          - const time = convertMilitaryToStandard(timeTrimmed)
