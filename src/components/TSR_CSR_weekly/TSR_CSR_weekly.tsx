@@ -11,12 +11,12 @@ import { data } from "./TSR_CSR_weekly.data";
 
 const TSR_CSR_weekly = () => {
   const week1 = {
-    week: "1/1/23 through 1/7/23",
+    week: "1/1/24 - 1/7/24",
     csrTicketCount: 0,
     tsrTicketCount: 0,
   };
   const week2 = {
-    week: "1/8/23 through 1/14/23",
+    week: "1/8/24 - 1/14/24",
     csrTicketCount: 0,
     tsrTicketCount: 0,
   };
